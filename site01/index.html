@@ -9,6 +9,9 @@
 
 </head>
 <body>
+
+<!-- header-->
+
     <header>
         <h1>site de investimentos</h1>
         <nav>
@@ -17,6 +20,9 @@
             <li><a href="#"></a>Serviços</li>
         </nav>
     </header>
+
+<!--escorpo-->
+
     <main>
         <section id="ferramentas">
             <h1>
@@ -28,17 +34,17 @@
             <h2>simule seus investimentos aqui</h2>
             <div id="formulário">
                 <h2>Valor inicial</h2>    
-                <input type="number" id="">
+                <input type="number" id="capital-inicial">
            
                 <h2>valor mensal</h2>    
-                <input type="number" id="">
+                <input type="number" id="valor-mensal">
            
                 <h2>Taxa de juros</h2>    
-                <input type="number" id="">
+                <input type="number" id="taxa-de-juros">
            
             
                 <h2>Período</h2>    
-                <input type="number" id="">
+                <input type="number" id="periodo">
             <div id="btn">
                 <input type="button" value="calcular">
             </div>
@@ -46,5 +52,13 @@
 
         </section>
     </main>
+    <script>
+        var capitalinicial = window.document.getElementById('capital-inicial')
+        var valormensal = window.document.getElementById("valor-mensal")
+        var taxadejuros = window.document.getElementById ('taxa-de-juros')
+        var periodo = window.document.getElementById('periodo')
+        
+
+    </script>
 </body>
 </html>
