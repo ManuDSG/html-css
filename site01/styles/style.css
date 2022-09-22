@@ -6,23 +6,48 @@
     font-family: poppins-light;
     src: url(fonts/Poppins-Light.ttf);
 }
-body{
-    font-family: poppins-light;
+/*reset*/
+    *{
+        margin: 0; 
+        padding: 0;
+    }
+    body{
+        font-family: poppins-light;
+        background-color: rgba(6, 0, 59, 0.384);
     
 }
 
-/*escorpo*/
+/*cabeçalio*/
 
     header{
         font-family: poppins-bold;
-        font-size: 1.2em;
+        font-size: 1em;
         display: flex;
         justify-content: space-between;
-        margin: 0 10px;
+        background-color: rgb(1, 0, 44);
         margin-bottom: 10px;
-        padding: 0 10px;
+        padding: 20px;
+        color: #f8f3e1;
+    }
+    header h1{
+        padding: 0 0 0 40px;
+        margin: 0;
 
     }
+    nav{
+        display: flex;
+        align-items: center;
+        width: 250px;
+        justify-content: space-between;
+        padding-right: 20px;
+    }
+    li {
+        font-family: poppins-light;
+        text-decoration: none;
+        list-style: none;
+
+    }
+/*corpo*/
     main{
         display: flex;
     }
@@ -44,14 +69,24 @@ body{
         text-align: center;
         flex-grow: 0.1;
         margin: 0 10px 0 0;
-        max-width: 600px;   
+        max-width: 600px;
+        background-color: #ece5cf;
+        border-radius: 15px;
+        box-shadow: rgba(0, 0, 0, 0.377) 0 0 5px;
     }
     #calculadora * {
         margin: 5px;
+
     }
     #calculadora h1 {
         font-size: 2em;
         font-family: poppins-bold;
+        margin-bottom: 0;
+        text-shadow: rgba(0, 0, 0, 0.63) 0 0 5px;
+    }
+    #calculadora h2 {
+        margin: 1px 0;
+        font-size: 1.3em;
     }
      input {
         width: 200px;
@@ -61,12 +96,23 @@ body{
         color: black;
         margin: 0;
         padding: 0;
+        border-radius: 5px;
+        border-style:none;
+        box-shadow: rgba(0, 0, 0, 0.541) 0px 0px 8px;
     }
+   #botão {
+    background-color: rgb(1, 0, 44);
+    color: #ece5cf;
+   }
+   #botão:hover {
+    background-color: rgb(2, 0, 109);
+   }
+
     #btn{
     display: flex;
     justify-content: center;
     margin-top: 10px;
-    color: black;
+
     }
     #formulário h2 {
         margin: 0;
