@@ -51,7 +51,6 @@
     main{
         display: flex;
     }
-
 /*ferramentas*/
 
     #ferramentas {
@@ -60,6 +59,7 @@
         margin: 0 20px 0 10px;
         flex-grow: 0.5;
         padding: 0 10px;
+        display: flex;
     }    
 
 /*calculadora*/    
@@ -121,3 +121,38 @@
         font-family: poppins-light;
 
     }
+    @media (max-width: 937px) { 
+        main {
+            display:inline-block;
+            text-align: center;
+        }
+    body{
+        text-align: center;   
+}
+    #ferramentas {
+        justify-content: center;
+        align-content: center;
+        margin: 5px auto 20px auto;
+    
+
+    }
+    #ferramentas h1 {
+        text-align: center;
+    }
+}
+@media (max-width: 750px) {
+    
+    header {
+        flex-direction: column;
+        justify-content: center;
+    }
+    header h1 { 
+        padding-left: 0;
+    }
+    nav {
+        margin: 0 auto;
+    }
+    #calculadora {
+        width: 60vh;
+    }
+}
